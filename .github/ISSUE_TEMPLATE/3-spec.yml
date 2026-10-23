@@ -1,0 +1,46 @@
+name: Spec
+description: Une fonctionnalité qui demande une analyse avant d'être découpée en issues
+labels: ["spec"]
+body:
+  - type: textarea
+    id: probleme
+    attributes:
+      label: Problème à résoudre
+      description: Le besoin des utilisateurs, sans encore parler de solution.
+    validations:
+      required: true
+  - type: textarea
+    id: scenarios
+    attributes:
+      label: Utilisateurs et scénarios
+      description: Qui, et les parcours principaux.
+  - type: textarea
+    id: perimetre
+    attributes:
+      label: Périmètre
+      description: Ce qui est inclus et ce qui est exclu de cette livraison.
+    validations:
+      required: true
+  - type: textarea
+    id: criteres
+    attributes:
+      label: Critères d'acceptation
+      placeholder: |
+        - [ ] ...
+    validations:
+      required: true
+  - type: input
+    id: fichier
+    attributes:
+      label: Fichier de spec
+      description: Pour une grosse spec, le fichier Markdown qui la détaille (dans le dépôt concerné, ou dans popforge/docs si elle touche plusieurs clusters).
+      placeholder: docs/specs/<fonctionnalite>.md
+  - type: textarea
+    id: questions
+    attributes:
+      label: Questions ouvertes
+  - type: textarea
+    id: decoupage
+    attributes:
+      label: Découpage
+      description: Les issues à créer ensuite, idéalement comme sous-issues de celle-ci.

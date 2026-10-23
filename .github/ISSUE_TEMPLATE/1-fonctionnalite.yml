@@ -1,0 +1,31 @@
+name: Fonctionnalité
+description: Une fonctionnalité assez petite pour tenir dans une seule issue
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: contexte
+    attributes:
+      label: Contexte et besoin
+      description: Qui en a besoin, dans quelle situation, et pourquoi maintenant.
+    validations:
+      required: true
+  - type: textarea
+    id: criteres
+    attributes:
+      label: Critères d'acceptation
+      description: Ce qui doit être vrai pour fermer l'issue. Assez précis pour qu'un agent puisse l'implémenter.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: hors-perimetre
+    attributes:
+      label: Hors périmètre
+      description: Ce qui n'est volontairement pas fait ici.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes techniques
+      description: Pistes, fichiers ou clusters touchés, dépendances.
