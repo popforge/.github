@@ -1,6 +1,7 @@
 name: Spec
 description: Une fonctionnalité qui demande une analyse avant d'être découpée en issues
 labels: ["spec"]
+projects: ["popforge/1"]
 body:
   - type: textarea
     id: probleme

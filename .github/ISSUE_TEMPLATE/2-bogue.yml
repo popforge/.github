@@ -1,6 +1,7 @@
 name: Bogue
 description: Un comportement qui ne fait pas ce qu'il devrait
 labels: ["bug"]
+projects: ["popforge/1"]
 body:
   - type: textarea
     id: etapes

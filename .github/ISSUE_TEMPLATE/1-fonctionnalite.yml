@@ -1,6 +1,7 @@
 name: Fonctionnalité
 description: Une fonctionnalité assez petite pour tenir dans une seule issue
 labels: ["enhancement"]
+projects: ["popforge/1"]
 body:
   - type: textarea
     id: contexte
