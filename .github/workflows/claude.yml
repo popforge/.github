@@ -56,5 +56,6 @@ jobs:
 
           # See https://github.com/anthropics/claude-code-action/blob/main/docs/usage.md
           # or https://code.claude.com/docs/en/cli-reference for available options
-          claude_args: '--max-turns 25'
+          # WebSearch et WebFetch : recherches sur le web (lois, documentation) demandées dans les issues et les PR
+          claude_args: '--max-turns 25 --allowedTools "WebSearch,WebFetch"'
 
